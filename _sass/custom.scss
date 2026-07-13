@@ -1,0 +1,30 @@
+.page {
+  max-width: 1000px;
+}
+
+.page__content {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.page__content p {
+  margin-bottom: 1.3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.masthead {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.sidebar {
+  opacity: 0.95;
+}

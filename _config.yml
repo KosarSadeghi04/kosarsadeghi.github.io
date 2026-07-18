@@ -121,9 +121,6 @@ author:
   email            : "kosarsadeghi.ut@gmail.com"
 
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-square-envelope"
-      url: "mailto:kosarsadeghi.ut@gmail.com"
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

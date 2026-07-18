@@ -34,3 +34,43 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
+.hero {
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin: 0 auto 35px;
+  max-width: 700px;
+}
+
+.hero-links {
+  font-size: 1.05rem;
+}
+
+.hero-links a {
+  color: #0055B7;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.hero-links a:hover {
+  text-decoration: underline;
+}

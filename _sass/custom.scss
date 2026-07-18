@@ -82,3 +82,31 @@ h3 {
   border-radius: 50%;
   margin-bottom: 30px;
 }
+
+.hero-buttons {
+  margin: 35px 0;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #0055B7;
+  color: white !important;
+}
+
+.btn-secondary {
+  border: 1px solid #0055B7;
+  color: #0055B7 !important;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.8;
+}

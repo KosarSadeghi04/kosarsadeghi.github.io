@@ -1,9 +1,8 @@
 ---
-
 title: "Elsewhere"
 permalink: /elsewhere/
 author_profile: true
---------------------
+---
 
 Not everything I am interested in has to do with economics.
 

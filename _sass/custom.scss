@@ -40,6 +40,7 @@ a:hover {
   color: var(--color-accent-soft);
 }
 
+/* Nav, meta, captions, dates, tags use the sans face throughout the site */
 .masthead,
 .greedy-nav,
 .page__meta,
@@ -54,14 +55,6 @@ a:hover {
    Page content
    ========================================================================== */
 
-#main {
-  padding-inline: 1.5em;
-
-  @include breakpoint($large) {
-    padding-inline: 3em;
-  }
-}
-
 .page {
   max-width: 1000px;
 }
@@ -69,19 +62,23 @@ a:hover {
 .page__content {
   font-size: 18px;
   line-height: 1.7;
-  max-width: var(--measure);
-  margin-left: auto;
-  margin-right: auto;
-  padding-inline: 1.5rem;
   text-align: justify;
-
-  @include breakpoint($large) {
-    padding-inline: 2.5rem;
-  }
 }
 
 .page__content p {
   margin-bottom: 1.4rem;
+}
+
+/* The theme's own nested selector (.page .page__inner-wrap .page__content)
+   has higher specificity than a flat .page__content rule, so width/margin
+   overrides must match that nesting to actually take effect. Padding is
+   used instead of margin because the element is floated by the theme. */
+.page .page__inner-wrap {
+  margin-top: 3rem;
+}
+
+.page .page__inner-wrap .page__content {
+  padding-inline: max(0px, calc((100% - var(--measure)) / 2));
 }
 
 .masthead {

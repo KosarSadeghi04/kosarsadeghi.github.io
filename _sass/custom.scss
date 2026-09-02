@@ -55,30 +55,44 @@ a:hover {
    Page content
    ========================================================================== */
 
+/* The theme floats .page__content/.page__meta/.page__share at width:100%
+   with margin-inline:0 (see _sass/minimal-mistakes/_page.scss), and floated
+   boxes ignore `margin: auto` centering — so no max-width/margin rule on
+   .page__content could ever center it. .page also reserves padding-inline-
+   end equal to the right-sidebar width for an on-page table of contents;
+   none of our pages use one, so that reservation was eating most of the
+   available width on the right while the left edge got nothing.
+
+   Fix: drop the unused TOC gutter and un-float the content column so it
+   can actually center within a readable max-width. */
+
 .page {
   max-width: 1000px;
+  padding-inline-end: 0;
+}
+
+.page .page__inner-wrap {
+  margin-top: 3rem;
+}
+
+.page .page__inner-wrap .page__content,
+.page .page__inner-wrap .page__meta,
+.page .page__inner-wrap .page__share {
+  float: none;
+  width: auto;
+  max-width: var(--measure);
+  margin-inline: auto;
 }
 
 .page__content {
   font-size: 18px;
   line-height: 1.7;
   text-align: justify;
+  padding-inline: 1.5rem;
 }
 
 .page__content p {
   margin-bottom: 1.4rem;
-}
-
-/* The theme's own nested selector (.page .page__inner-wrap .page__content)
-   has higher specificity than a flat .page__content rule, so width/margin
-   overrides must match that nesting to actually take effect. Padding is
-   used instead of margin because the element is floated by the theme. */
-.page .page__inner-wrap {
-  margin-top: 3rem;
-}
-
-.page .page__inner-wrap .page__content {
-  padding-inline: max(0px, calc((100% - var(--measure)) / 2));
 }
 
 .masthead {

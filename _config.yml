@@ -116,15 +116,14 @@ analytics:
 author:
   name             : "Kosar Sadeghi"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "MA Student in Global Studies at the University of British Columbia Okanagan. Research interests in applied microeconomics and public policy."
+  bio              : |-
+    MA Student in Global Studies, Economics
+
+    the University of British Columbia
   location         : "British Columbia, Canada"
   email            : "kosar.sadeghi@ubc.ca"
 
   links:
-
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/KosarSadeghi04"
 
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"

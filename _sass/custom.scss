@@ -54,6 +54,14 @@ a:hover {
    Page content
    ========================================================================== */
 
+#main {
+  padding-inline: 1.5em;
+
+  @include breakpoint($large) {
+    padding-inline: 3em;
+  }
+}
+
 .page {
   max-width: 1000px;
 }

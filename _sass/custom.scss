@@ -1,24 +1,79 @@
+/* ==========================================================================
+   Design tokens
+   ========================================================================== */
+
+:root {
+  --color-paper: #FAF8F3;
+  --color-ink: #1C1B19;
+  --color-ink-muted: #5B584F;
+  --color-accent: #2B3A55;
+  --color-accent-soft: #7C8AA0;
+  --color-rule: #DEDAD0;
+
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-sans: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --measure: 680px;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-accent-soft);
+}
+
+/* Nav, meta, captions, dates, tags use the sans face throughout the site */
+.masthead,
+.greedy-nav,
+.page__meta,
+.page__date,
+.author__urls,
+.breadcrumbs,
+.pagination {
+  font-family: var(--font-sans);
+}
+
+/* ==========================================================================
+   Page content
+   ========================================================================== */
+
 .page {
   max-width: 1000px;
 }
 
 .page__content {
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page__content p {
-  margin-bottom: 1.3rem;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 600;
+  margin-bottom: 1.4rem;
 }
 
 .masthead {
-  border-bottom: 1px solid #eeeeee;
+  background-color: var(--color-paper);
+  border-bottom: 1px solid var(--color-rule);
 }
 
 .greedy-nav {
@@ -29,11 +84,23 @@ h3 {
   opacity: 0.95;
 }
 
-.page__content {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
+/* ==========================================================================
+   Section divider — the site's one signature mark.
+   Used between chronological entries (Notebook) instead of a plain <hr>.
+   ========================================================================== */
+
+.divider-mark {
+  text-align: center;
+  color: var(--color-ink-muted);
+  font-family: var(--font-serif);
+  letter-spacing: 0.3em;
+  margin: 3rem 0;
 }
+
+/* ==========================================================================
+   Homepage hero
+   ========================================================================== */
+
 .hero {
   max-width: 800px;
   margin: 80px auto;
@@ -41,32 +108,34 @@ h3 {
 }
 
 .hero h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
+  font-size: 2.6rem;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .hero-subtitle {
-  font-size: 1.4rem;
-  color: #555;
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  color: var(--color-ink-muted);
   line-height: 1.6;
   margin-bottom: 30px;
 }
 
 .hero-text {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.8;
-  color: #333;
+  color: var(--color-ink);
   margin: 0 auto 35px;
-  max-width: 700px;
+  max-width: 620px;
 }
 
 .hero-links {
-  font-size: 1.05rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
 }
 
 .hero-links a {
-  color: #0055B7;
+  color: var(--color-accent);
   text-decoration: none;
   margin: 0 8px;
 }
@@ -76,8 +145,8 @@ h3 {
 }
 
 .hero-image {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 30px;
@@ -89,24 +158,26 @@ h3 {
 
 .hero-buttons a {
   display: inline-block;
-  padding: 12px 28px;
-  border-radius: 6px;
+  padding: 11px 26px;
+  border-radius: 3px;
   text-decoration: none;
   margin: 0 8px;
-  font-size: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
 }
 
 .btn-primary {
-  background: #0055B7;
-  color: white !important;
+  background: var(--color-accent);
+  color: var(--color-paper) !important;
 }
 
 .btn-secondary {
-  border: 1px solid #0055B7;
-  color: #0055B7 !important;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent) !important;
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
   opacity: 0.8;
 }
+

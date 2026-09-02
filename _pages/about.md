@@ -4,12 +4,6 @@ permalink: /about/
 author_profile: true
 ---
 
----
-
-title: "About"
-permalink: /about/
-author_profile: true
---------------------
 
 I grew up in Iran and studied economics at the University of Tehran, where I developed a strong interest in understanding how people make decisions and how those decisions are shaped by incentives, institutions, and the environments in which they live.
 

@@ -118,6 +118,17 @@ a:hover {
   margin-inline: auto;
 }
 
+/* .page__inner-wrap is still float:inline-start from the theme
+   (_sass/minimal-mistakes/_page.scss), unconditionally. That was harmless
+   while .page was also floated (a floated box always contains its own
+   floated children), but now that .page above is float:none, it has only
+   a floated child and nothing clearing it — the classic float-collapse
+   bug, which breaks the box's own height/containment. Un-float it too. */
+.wide .page .page__inner-wrap {
+  float: none;
+  width: auto;
+}
+
 .wide .page .page__inner-wrap .page__content {
   max-width: none;
   padding-inline: 0;

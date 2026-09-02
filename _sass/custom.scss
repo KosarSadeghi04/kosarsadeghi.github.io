@@ -95,6 +95,33 @@ a:hover {
   margin-bottom: 1.4rem;
 }
 
+/* The page title lives in its own <header>, a sibling of .page__content
+   inside .page__inner-wrap — it was never covered by the rule above, so it
+   sat at .page__inner-wrap's full (unconstrained) width while the body
+   text below it was centered and inset. Give it the same box so the title
+   lines up directly above the text. */
+.page .page__inner-wrap > header {
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+/* Wide pages (currently just the homepage) have no author sidebar, but
+   .page is still floated by the theme at a width that assumes one exists
+   (`.wide` only zeroes the extra TOC gutter, not that reservation) — so
+   its content sat off-center in the right-hand portion of the viewport.
+   Un-float it to the full width, and let content (the hero) size and
+   center itself instead of being boxed into the article reading measure. */
+.wide .page {
+  float: none;
+  width: 100%;
+}
+
+.wide .page .page__inner-wrap .page__content {
+  max-width: none;
+  padding-inline: 0;
+}
+
 .masthead {
   background-color: var(--color-paper);
   border-bottom: 1px solid var(--color-rule);

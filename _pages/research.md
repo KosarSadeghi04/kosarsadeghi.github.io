@@ -1,9 +1,8 @@
 ---
-
 title: "Research"
 permalink: /research/
 author_profile: true
---------------------
+---
 
 My research interests lie at the intersection of applied microeconomics, behavioral economics, and public policy. I am particularly interested in how individuals make decisions, how incentives and institutions shape those decisions, and how individual behavior translates into broader economic and social outcomes.
 

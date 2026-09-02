@@ -5,5 +5,11 @@ main:
   - title: "Research"
     url: /research/
 
-  - title: "CV"
-    url: /cv/
+  - title: "Experience"
+    url: /experience/
+
+  - title: "Notebook"
+    url: /notebook/
+
+  - title: "Elsewhere"
+    url: /elsewhere/

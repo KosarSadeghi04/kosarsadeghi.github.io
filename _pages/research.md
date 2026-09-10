@@ -6,7 +6,7 @@ author_profile: true
 
 My research interests lie at the intersection of applied microeconomics, behavioral economics, and public policy. I am particularly interested in how individuals make decisions, how incentives and institutions shape those decisions, and how individual behavior translates into broader economic and social outcomes.
 
-I am currently pursuing an MA in Global Studies at the University of British Columbia Okanagan, where my work brings together perspectives from economics, political science, and philosophy. I continue to approach many of my research questions from an economist's perspective, while increasingly interested in the institutional and social contexts in which economic decisions take place.
+I am currently pursuing an MA in interdisciplinary graduate studies at the University of British Columbia Okanagan, where my work brings together perspectives from economics, political science, and philosophy. I continue to approach many of my research questions from an economist's perspective, while increasingly interested in the institutional and social contexts in which economic decisions take place.
 
 ### Current Research
 

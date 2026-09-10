@@ -4,7 +4,9 @@ permalink: /about/
 author_profile: true
 ---
 
+
 ## Who Am I
+
 
 I have always been drawn to the social sciences. Long before I knew what economics, political science, or sociology were, I was interested in people: their stories, their choices, the circumstances that shape their lives, and the things that make those lives better or harder.
 
@@ -40,13 +42,13 @@ Data allows me to move from asking what people might do to examining what they a
 
 For me, quantitative methods are not an end in themselves. They are a way of getting closer to questions about people.
 
-## Why Global Studies
+## Why Interdisciplinary Graduate Studies
 
-I am now pursuing an MA in Global Studies at the University of British Columbia.
+I am now pursuing an MA in interdisciplinary graduate studies at the University of British Columbia.
 
 In some ways, this is a departure from the more traditional path of an economics student. In another sense, it feels like a natural continuation of everything I had been interested in before.
 
-Global Studies gives me the opportunity to bring together economics, political science, and philosophy while allowing me to keep economics at the centre of how I approach many questions.
+Interdisciplinary graduate studies gives me the opportunity to bring together economics, political science, and philosophy while allowing me to keep economics at the centre of how I approach many questions.
 
 My interest in human behavior and the possibility of making things better has remained at the centre of my work. Along the way, I have simply found more questions to ask, and more ways to approach them!
 
